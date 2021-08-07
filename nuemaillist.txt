@@ -1,0 +1,172 @@
+function extractEmails (text)
+        {
+            return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+        }
+
+// var text = "heelo marib@gmail.com k132144@nu.edu.pk k11...@edu.pk another";
+
+var text = ` `
+
+res = extractEmails(text).filter(email => email[4] != ".");
+
+finalStr = "";
+counter = 0;
+res.forEach(email => {
+  finalStr += email +" ";
+  if(counter == 5){
+    finalStr += "\n";
+      counter = 0;
+  }
+  counter++;
+  
+})
+
+
+console.log(finalStr);
+
+
+
+
+=============================
+
+
+k183502@nu.edu.pk k191625@nu.edu.pk k190890@nu.edu.pk k190810@nu.edu.pk k201393@nu.edu.pk 
+k201343@nu.edu.pk k180946@nu.edu.pk k201401@nu.edu.pk k133504@nu.edu.pk k143501@nu.edu.pk 
+k143504@nu.edu.pk k153024@nu.edu.pk k153413@nu.edu.pk k153415@nu.edu.pk k153417@nu.edu.pk 
+k153502@nu.edu.pk k153503@nu.edu.pk K153507@nu.edu.pk k163001@nu.edu.pk k163004@nu.edu.pk 
+k163025@nu.edu.pk k163041@nu.edu.pk k163054@nu.edu.pk k163059@nu.edu.pk k163060@nu.edu.pk 
+k163067@nu.edu.pk k163069@nu.edu.pk k163410@nu.edu.pk k163411@nu.edu.pk k163412@nu.edu.pk 
+k163414@nu.edu.pk k163426@nu.edu.pk k163502@nu.edu.pk k174225@nu.edu.pk k173002@nu.edu.pk 
+k173003@nu.edu.pk k173006@nu.edu.pk k173007@nu.edu.pk k173008@nu.edu.pk k173013@nu.edu.pk 
+k173016@nu.edu.pk k173017@nu.edu.pk k173019@nu.edu.pk k173021@nu.edu.pk k173024@nu.edu.pk 
+k173028@nu.edu.pk k173031@nu.edu.pk k173033@nu.edu.pk k173034@nu.edu.pk k173035@nu.edu.pk 
+k173037@nu.edu.pk k173038@nu.edu.pk k173040@nu.edu.pk k173041@nu.edu.pk k173042@nu.edu.pk 
+k173043@nu.edu.pk k173044@nu.edu.pk k173045@nu.edu.pk k173046@nu.edu.pk k173048@nu.edu.pk 
+k173049@nu.edu.pk k173050@nu.edu.pk k173051@nu.edu.pk k173052@nu.edu.pk k173054@nu.edu.pk 
+k173055@nu.edu.pk k173056@nu.edu.pk k173057@nu.edu.pk k173058@nu.edu.pk k173062@nu.edu.pk 
+k173063@nu.edu.pk k173064@nu.edu.pk k173072@nu.edu.pk k173073@nu.edu.pk k173076@nu.edu.pk 
+k173077@nu.edu.pk k173079@nu.edu.pk k173080@nu.edu.pk k173085@nu.edu.pk k173091@nu.edu.pk 
+k173092@nu.edu.pk k173093@nu.edu.pk k173094@nu.edu.pk k173096@nu.edu.pk k173097@nu.edu.pk 
+k173098@nu.edu.pk k173100@nu.edu.pk k173401@nu.edu.pk k173403@nu.edu.pk k173406@nu.edu.pk 
+k173407@nu.edu.pk k173409@nu.edu.pk k173413@nu.edu.pk k173414@nu.edu.pk k173415@nu.edu.pk 
+k173416@nu.edu.pk k173417@nu.edu.pk k173419@nu.edu.pk k173421@nu.edu.pk k201219@nu.edu.pk 
+k173422@nu.edu.pk k173425@nu.edu.pk k173431@nu.edu.pk k173434@nu.edu.pk k173435@nu.edu.pk 
+k173437@nu.edu.pk k173438@nu.edu.pk k173439@nu.edu.pk k173440@nu.edu.pk k173443@nu.edu.pk 
+k173501@nu.edu.pk k174201@nu.edu.pk k174203@nu.edu.pk k174205@nu.edu.pk k174206@nu.edu.pk 
+k174207@nu.edu.pk k174209@nu.edu.pk k174216@nu.edu.pk k174218@nu.edu.pk k174220@nu.edu.pk 
+k174221@nu.edu.pk k174224@nu.edu.pk k180701@nu.edu.pk k180702@nu.edu.pk k180703@nu.edu.pk 
+k180704@nu.edu.pk k180705@nu.edu.pk k180706@nu.edu.pk k180707@nu.edu.pk k180708@nu.edu.pk 
+k180709@nu.edu.pk k180710@nu.edu.pk k180711@nu.edu.pk k180712@nu.edu.pk k180713@nu.edu.pk 
+k180714@nu.edu.pk k180715@nu.edu.pk k180716@nu.edu.pk k180717@nu.edu.pk k180718@nu.edu.pk 
+k180719@nu.edu.pk k180720@nu.edu.pk k180721@nu.edu.pk k180722@nu.edu.pk k180723@nu.edu.pk 
+k180724@nu.edu.pk k180725@nu.edu.pk k180726@nu.edu.pk k180727@nu.edu.pk k180728@nu.edu.pk 
+k180729@nu.edu.pk k180730@nu.edu.pk k180731@nu.edu.pk k180732@nu.edu.pk k180733@nu.edu.pk 
+k180734@nu.edu.pk k180735@nu.edu.pk k180736@nu.edu.pk k180738@nu.edu.pk k180739@nu.edu.pk 
+k180740@nu.edu.pk k180741@nu.edu.pk k180782@nu.edu.pk k180785@nu.edu.pk k180786@nu.edu.pk 
+k180790@nu.edu.pk k180791@nu.edu.pk k180792@nu.edu.pk k180793@nu.edu.pk k180794@nu.edu.pk 
+k180795@nu.edu.pk k180798@nu.edu.pk k180799@nu.edu.pk k180802@nu.edu.pk k180808@nu.edu.pk 
+k180809@nu.edu.pk k180862@nu.edu.pk k180863@nu.edu.pk k180864@nu.edu.pk k180865@nu.edu.pk 
+k180866@nu.edu.pk k180867@nu.edu.pk k180868@nu.edu.pk k180869@nu.edu.pk k180870@nu.edu.pk 
+k180871@nu.edu.pk k180872@nu.edu.pk k180874@nu.edu.pk k180875@nu.edu.pk k180877@nu.edu.pk 
+k180878@nu.edu.pk k180880@nu.edu.pk k180882@nu.edu.pk k180883@nu.edu.pk k180885@nu.edu.pk 
+k180886@nu.edu.pk k180887@nu.edu.pk k180888@nu.edu.pk k180889@nu.edu.pk k173436@nu.edu.pk 
+k180890@nu.edu.pk k180891@nu.edu.pk k180892@nu.edu.pk k180893@nu.edu.pk k180894@nu.edu.pk 
+k180896@nu.edu.pk k180897@nu.edu.pk k180899@nu.edu.pk k180900@nu.edu.pk k180901@nu.edu.pk 
+k180902@nu.edu.pk k180904@nu.edu.pk k180905@nu.edu.pk k180906@nu.edu.pk k180907@nu.edu.pk 
+k180908@nu.edu.pk k180909@nu.edu.pk k180910@nu.edu.pk k180911@nu.edu.pk k180912@nu.edu.pk 
+k180914@nu.edu.pk k180915@nu.edu.pk k180916@nu.edu.pk k180917@nu.edu.pk k180918@nu.edu.pk 
+k180919@nu.edu.pk k180920@nu.edu.pk k180921@nu.edu.pk k180922@nu.edu.pk k180925@nu.edu.pk 
+k180926@nu.edu.pk k180927@nu.edu.pk k180929@nu.edu.pk k180930@nu.edu.pk k180931@nu.edu.pk 
+k180933@nu.edu.pk k180936@nu.edu.pk k180937@nu.edu.pk k180938@nu.edu.pk k180939@nu.edu.pk 
+k180941@nu.edu.pk k180942@nu.edu.pk k180944@nu.edu.pk k180945@nu.edu.pk k180947@nu.edu.pk 
+k180948@nu.edu.pk k180949@nu.edu.pk k180950@nu.edu.pk k180951@nu.edu.pk k180953@nu.edu.pk 
+k180954@nu.edu.pk k180956@nu.edu.pk k180957@nu.edu.pk k180958@nu.edu.pk k180959@nu.edu.pk 
+k180961@nu.edu.pk k180963@nu.edu.pk k180966@nu.edu.pk k180968@nu.edu.pk k180970@nu.edu.pk 
+k180971@nu.edu.pk k180972@nu.edu.pk k180973@nu.edu.pk k180974@nu.edu.pk k180975@nu.edu.pk 
+k180976@nu.edu.pk k180977@nu.edu.pk k180979@nu.edu.pk k180982@nu.edu.pk k180983@nu.edu.pk 
+k181201@nu.edu.pk k181271@nu.edu.pk k181301@nu.edu.pk k181302@nu.edu.pk k181303@nu.edu.pk 
+k181305@nu.edu.pk k181306@nu.edu.pk k181308@nu.edu.pk k181309@nu.edu.pk k181310@nu.edu.pk 
+k181311@nu.edu.pk k181312@nu.edu.pk k181313@nu.edu.pk k181317@nu.edu.pk k181318@nu.edu.pk 
+k181320@nu.edu.pk k181322@nu.edu.pk k181323@nu.edu.pk k181324@nu.edu.pk k181325@nu.edu.pk 
+k181327@nu.edu.pk k181328@nu.edu.pk k181329@nu.edu.pk k181330@nu.edu.pk k183501@nu.edu.pk 
+k183503@nu.edu.pk k190701@nu.edu.pk k190702@nu.edu.pk k190703@nu.edu.pk k180895@nu.edu.pk 
+k190704@nu.edu.pk k190705@nu.edu.pk k190706@nu.edu.pk k190707@nu.edu.pk k190708@nu.edu.pk 
+k190710@nu.edu.pk k190711@nu.edu.pk k190712@nu.edu.pk k190713@nu.edu.pk k190714@nu.edu.pk 
+k190715@nu.edu.pk k190716@nu.edu.pk k190717@nu.edu.pk k190718@nu.edu.pk k190719@nu.edu.pk 
+k190721@nu.edu.pk k190722@nu.edu.pk k190723@nu.edu.pk k190724@nu.edu.pk k190725@nu.edu.pk 
+k190726@nu.edu.pk k190727@nu.edu.pk k190728@nu.edu.pk k190729@nu.edu.pk k190730@nu.edu.pk 
+k190731@nu.edu.pk k190732@nu.edu.pk k190733@nu.edu.pk k190734@nu.edu.pk k190735@nu.edu.pk 
+k190736@nu.edu.pk k190737@nu.edu.pk k190738@nu.edu.pk k190739@nu.edu.pk k190740@nu.edu.pk 
+k190741@nu.edu.pk k190743@nu.edu.pk k190744@nu.edu.pk k190745@nu.edu.pk k190746@nu.edu.pk 
+k190747@nu.edu.pk k190748@nu.edu.pk k190781@nu.edu.pk k190782@nu.edu.pk k190783@nu.edu.pk 
+k190784@nu.edu.pk k190785@nu.edu.pk k190786@nu.edu.pk k190787@nu.edu.pk k190788@nu.edu.pk 
+k190789@nu.edu.pk k190790@nu.edu.pk k190791@nu.edu.pk k190792@nu.edu.pk k190793@nu.edu.pk 
+k190794@nu.edu.pk k190795@nu.edu.pk k190796@nu.edu.pk k190797@nu.edu.pk k190798@nu.edu.pk 
+k190799@nu.edu.pk k190801@nu.edu.pk k190802@nu.edu.pk k190803@nu.edu.pk k190804@nu.edu.pk 
+k190805@nu.edu.pk k190806@nu.edu.pk k190807@nu.edu.pk k190808@nu.edu.pk k190809@nu.edu.pk 
+k190811@nu.edu.pk k190812@nu.edu.pk k190813@nu.edu.pk k190814@nu.edu.pk k190815@nu.edu.pk 
+k190817@nu.edu.pk k190818@nu.edu.pk k190861@nu.edu.pk k190862@nu.edu.pk k190863@nu.edu.pk 
+k190864@nu.edu.pk k190865@nu.edu.pk k190866@nu.edu.pk k190867@nu.edu.pk k190868@nu.edu.pk 
+k190869@nu.edu.pk k190870@nu.edu.pk k190871@nu.edu.pk k190872@nu.edu.pk k190873@nu.edu.pk 
+k190874@nu.edu.pk k190875@nu.edu.pk k190876@nu.edu.pk k190877@nu.edu.pk k190878@nu.edu.pk 
+k190879@nu.edu.pk k190880@nu.edu.pk k190881@nu.edu.pk k190882@nu.edu.pk k190709@nu.edu.pk 
+k190884@nu.edu.pk k190885@nu.edu.pk k190886@nu.edu.pk k190887@nu.edu.pk k190891@nu.edu.pk 
+k190893@nu.edu.pk k190894@nu.edu.pk k190895@nu.edu.pk k190896@nu.edu.pk k190897@nu.edu.pk 
+k190898@nu.edu.pk k190899@nu.edu.pk k190900@nu.edu.pk k190901@nu.edu.pk k190902@nu.edu.pk 
+k190903@nu.edu.pk k190904@nu.edu.pk k190905@nu.edu.pk k190906@nu.edu.pk k190909@nu.edu.pk 
+k190910@nu.edu.pk k190911@nu.edu.pk k190912@nu.edu.pk k190915@nu.edu.pk k190916@nu.edu.pk 
+k190917@nu.edu.pk k190919@nu.edu.pk k190920@nu.edu.pk k190922@nu.edu.pk k190923@nu.edu.pk 
+k190924@nu.edu.pk k190925@nu.edu.pk k190926@nu.edu.pk k190927@nu.edu.pk k190928@nu.edu.pk 
+k190929@nu.edu.pk k190930@nu.edu.pk k190931@nu.edu.pk k190932@nu.edu.pk k190933@nu.edu.pk 
+k190934@nu.edu.pk k190936@nu.edu.pk k190938@nu.edu.pk k190939@nu.edu.pk k190940@nu.edu.pk 
+k190941@nu.edu.pk k190942@nu.edu.pk k190943@nu.edu.pk k190944@nu.edu.pk k190945@nu.edu.pk 
+k190946@nu.edu.pk k190947@nu.edu.pk k190948@nu.edu.pk k190949@nu.edu.pk k190950@nu.edu.pk 
+k190951@nu.edu.pk k190952@nu.edu.pk k190953@nu.edu.pk k190955@nu.edu.pk k190956@nu.edu.pk 
+k190957@nu.edu.pk k190958@nu.edu.pk k190959@nu.edu.pk k190960@nu.edu.pk k190961@nu.edu.pk 
+k190962@nu.edu.pk k190963@nu.edu.pk k190964@nu.edu.pk k190965@nu.edu.pk k190966@nu.edu.pk 
+k190967@nu.edu.pk k190968@nu.edu.pk k190969@nu.edu.pk k190970@nu.edu.pk k190971@nu.edu.pk 
+k190972@nu.edu.pk k190974@nu.edu.pk k190975@nu.edu.pk k190976@nu.edu.pk k190977@nu.edu.pk 
+k190978@nu.edu.pk k190981@nu.edu.pk k190982@nu.edu.pk k190983@nu.edu.pk k190984@nu.edu.pk 
+k190985@nu.edu.pk k190986@nu.edu.pk k191601@nu.edu.pk k191602@nu.edu.pk k191603@nu.edu.pk 
+k191604@nu.edu.pk k191605@nu.edu.pk k191606@nu.edu.pk k191608@nu.edu.pk k191609@nu.edu.pk 
+k191610@nu.edu.pk k191611@nu.edu.pk k191612@nu.edu.pk k191613@nu.edu.pk k190892@nu.edu.pk 
+k191614@nu.edu.pk k191615@nu.edu.pk k191616@nu.edu.pk k191617@nu.edu.pk k191619@nu.edu.pk 
+k191622@nu.edu.pk k191623@nu.edu.pk k191624@nu.edu.pk k191626@nu.edu.pk k191627@nu.edu.pk 
+k191628@nu.edu.pk k191630@nu.edu.pk k191701@nu.edu.pk k200981@nu.edu.pk k200983@nu.edu.pk 
+k200984@nu.edu.pk k200985@nu.edu.pk k200986@nu.edu.pk k200987@nu.edu.pk k200989@nu.edu.pk 
+k201201@nu.edu.pk k201202@nu.edu.pk k201203@nu.edu.pk k201204@nu.edu.pk k201205@nu.edu.pk 
+k201206@nu.edu.pk k201207@nu.edu.pk k201208@nu.edu.pk k201209@nu.edu.pk k201210@nu.edu.pk 
+k201211@nu.edu.pk k201212@nu.edu.pk k201213@nu.edu.pk k201214@nu.edu.pk k201215@nu.edu.pk 
+k201216@nu.edu.pk k201217@nu.edu.pk k201218@nu.edu.pk k201220@nu.edu.pk k201221@nu.edu.pk 
+k201222@nu.edu.pk k201223@nu.edu.pk k201224@nu.edu.pk k201225@nu.edu.pk k201226@nu.edu.pk 
+k201301@nu.edu.pk k201302@nu.edu.pk k201303@nu.edu.pk k201304@nu.edu.pk k201305@nu.edu.pk 
+k201306@nu.edu.pk k201307@nu.edu.pk k201308@nu.edu.pk k201309@nu.edu.pk k201310@nu.edu.pk 
+k201311@nu.edu.pk k201312@nu.edu.pk k201313@nu.edu.pk k201314@nu.edu.pk k201315@nu.edu.pk 
+k201316@nu.edu.pk k201317@nu.edu.pk k201318@nu.edu.pk k201319@nu.edu.pk k201320@nu.edu.pk 
+k201321@nu.edu.pk k201323@nu.edu.pk k201324@nu.edu.pk k201325@nu.edu.pk k201326@nu.edu.pk 
+k201327@nu.edu.pk k201329@nu.edu.pk k201330@nu.edu.pk k201331@nu.edu.pk k201332@nu.edu.pk 
+k201333@nu.edu.pk k201335@nu.edu.pk k201336@nu.edu.pk k201337@nu.edu.pk k201338@nu.edu.pk 
+k201339@nu.edu.pk k201341@nu.edu.pk k201342@nu.edu.pk k201345@nu.edu.pk k201346@nu.edu.pk 
+k201347@nu.edu.pk k201348@nu.edu.pk k201349@nu.edu.pk k201350@nu.edu.pk k201351@nu.edu.pk 
+k201352@nu.edu.pk k201353@nu.edu.pk k201354@nu.edu.pk k201355@nu.edu.pk k201356@nu.edu.pk 
+k201357@nu.edu.pk k201358@nu.edu.pk k201359@nu.edu.pk k201360@nu.edu.pk k191620@nu.edu.pk 
+k201361@nu.edu.pk k201363@nu.edu.pk k201364@nu.edu.pk k201365@nu.edu.pk k201366@nu.edu.pk 
+k201368@nu.edu.pk k201369@nu.edu.pk k201370@nu.edu.pk k201371@nu.edu.pk k201373@nu.edu.pk 
+k201374@nu.edu.pk k201375@nu.edu.pk k201376@nu.edu.pk k201377@nu.edu.pk k201378@nu.edu.pk 
+k201379@nu.edu.pk k201381@nu.edu.pk k201382@nu.edu.pk k201383@nu.edu.pk k201384@nu.edu.pk 
+k201385@nu.edu.pk k201386@nu.edu.pk k201387@nu.edu.pk k201388@nu.edu.pk k201389@nu.edu.pk 
+k201390@nu.edu.pk k201391@nu.edu.pk k201392@nu.edu.pk k201394@nu.edu.pk k201395@nu.edu.pk 
+k201396@nu.edu.pk k201397@nu.edu.pk k201398@nu.edu.pk k201400@nu.edu.pk k201402@nu.edu.pk 
+k201403@nu.edu.pk k201404@nu.edu.pk k201405@nu.edu.pk k201406@nu.edu.pk k201407@nu.edu.pk 
+k201408@nu.edu.pk k201410@nu.edu.pk k201411@nu.edu.pk k201412@nu.edu.pk k201413@nu.edu.pk 
+k201414@nu.edu.pk k201415@nu.edu.pk k201416@nu.edu.pk k201417@nu.edu.pk k201501@nu.edu.pk 
+k201502@nu.edu.pk k201503@nu.edu.pk k201504@nu.edu.pk k201505@nu.edu.pk k201506@nu.edu.pk 
+k201507@nu.edu.pk k201508@nu.edu.pk k201509@nu.edu.pk k201511@nu.edu.pk k201512@nu.edu.pk 
+k201513@nu.edu.pk k201514@nu.edu.pk k201515@nu.edu.pk k201517@nu.edu.pk k201518@nu.edu.pk 
+k201520@nu.edu.pk k201521@nu.edu.pk k201522@nu.edu.pk k201523@nu.edu.pk k201524@nu.edu.pk 
+k201525@nu.edu.pk k201526@nu.edu.pk k201527@nu.edu.pk k201528@nu.edu.pk k201529@nu.edu.pk 
+k201530@nu.edu.pk k201531@nu.edu.pk k201532@nu.edu.pk k201533@nu.edu.pk k201534@nu.edu.pk 
+k201535@nu.edu.pk k201536@nu.edu.pk k201537@nu.edu.pk k201538@nu.edu.pk k201539@nu.edu.pk 
+k153066@nu.edu.pk k200990@nu.edu.pk k201516@nu.edu.pk k201322@nu.edu.pk k180800@nu.edu.pk 
+k201409@nu.edu.pk k201519@nu.edu.pk k180913@nu.edu.pk k200988@nu.edu.pk k201510@nu.edu.pk 
+k173442@nu.edu.pk p177001@nu.edu.pk k201367@nu.edu.pk k201344@nu.edu.pk 
